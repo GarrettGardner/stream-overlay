@@ -1,0 +1,34 @@
+.screen {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  left: 0;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  &.screen--message {
+    h2 {
+      font-size: 8rem;
+      font-weight: 900;
+    }
+  }
+
+  &.screen--stage {
+    video {
+      display: none;
+      height: 100%;
+      left: 0;
+      object-fit: fill;
+      position: absolute;
+      top: 0;
+      width: 100%;
+
+      &.op--visible {
+        display: block;
+      }
+    }
+  }
+}

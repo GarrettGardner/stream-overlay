@@ -1,0 +1,42 @@
+@function getMap($map: "colors", $value: "white") {
+  @if map-has-key($map, $value) {
+    @return map-get($map, $value);
+  }
+
+  @warn "Map value could not be retrieved: `#{$value}`.";
+  @return null;
+}
+
+@function color($color: "white") {
+  @return getMap($colors, $color);
+}
+
+@function font($font: "primary") {
+  @return unquote(getMap($fonts, $font));
+}
+
+$columnWidth: 105px;
+$gutterWidth: 40px;
+$borderMargin: 50px;
+
+@function columnWidth($number: 1) {
+  @return $columnWidth * ($number) + $gutterWidth * ($number - 1);
+}
+
+@function columnLeft($number: 1) {
+  @return $borderMargin + (($columnWidth * ($number)) + ($gutterWidth * ($number)));
+}
+
+%fullSize {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+%hideContent {
+  text-align: left;
+  text-indent: -999rem;
+  overflow: hidden;
+}

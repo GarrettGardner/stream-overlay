@@ -104,6 +104,12 @@ export const MEMES: IMeme[] = [
     volume: 20,
   },
   {
+    id: "f-you",
+    duration: 2000,
+    permission: MEME_PERMISSION.ALL,
+    volume: 60,
+  },
+  {
     id: "feeling",
     duration: 11500,
     permission: MEME_PERMISSION.ALL,

@@ -29,7 +29,7 @@ export const App = () => {
 
     twitchClient.current.on("connected", () => {
       console.log(`Websocket connection to Twitch opened.`);
-      setStatus(APP_STATUS.READY);
+      setStatus(APP_STATUS.LOAD);
     });
 
     twitchClient.current.on("disconnected", () => {
@@ -109,6 +109,11 @@ export const App = () => {
       {status === APP_STATUS.LOADING && (
         <div className="screen screen--message">
           <h2>Loading...</h2>
+        </div>
+      )}
+      {status === APP_STATUS.LOAD && (
+        <div className="screen screen--message">
+          <button onClick={() => setStatus(APP_STATUS.READY)}>Load Memes!</button>
         </div>
       )}
       {status === APP_STATUS.ERROR && (

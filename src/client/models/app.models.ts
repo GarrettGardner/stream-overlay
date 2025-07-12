@@ -1,5 +1,6 @@
 export enum APP_STATUS {
   LOADING = "loading",
+  LOAD = "load",
   READY = "ready",
   PLAYING = "playing",
   ERROR = "error",

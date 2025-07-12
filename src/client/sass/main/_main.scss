@@ -11,6 +11,16 @@
 
   &.screen--message {
     h2 {
+      color: white;
+      text-shadow: 2px 2px black, -2px 2px black, 2px -2px black, -2px -2px black, 4px 4px 4px black;
+      font-size: 8rem;
+      font-weight: 900;
+    }
+
+    button {
+      color: white;
+      cursor: pointer;
+      text-shadow: 2px 2px black, -2px 2px black, 2px -2px black, -2px -2px black, 4px 4px 4px black;
       font-size: 8rem;
       font-weight: 900;
     }

@@ -86,7 +86,7 @@ export const MEMES: IMeme[] = [
     volume: 10,
   },
   {
-    id: "dont-care",
+    id: "dont-care-for",
     duration: 3500,
     permission: MEME_PERMISSION.ALL,
     volume: 80,
@@ -152,13 +152,13 @@ export const MEMES: IMeme[] = [
     volume: 90,
   },
   {
-    id: "hero",
+    id: "bo3-3",
     duration: 28500,
     permission: MEME_PERMISSION.MODS,
     volume: 20,
   },
   {
-    id: "hero-bo1",
+    id: "bo1-7",
     duration: 28500,
     permission: MEME_PERMISSION.MODS,
     volume: 20,
@@ -368,7 +368,7 @@ export const MEMES: IMeme[] = [
     volume: 100,
   },
   {
-    id: "serious-shit",
+    id: "serious",
     duration: 4500,
     permission: MEME_PERMISSION.ALL,
     volume: 100,
@@ -404,7 +404,7 @@ export const MEMES: IMeme[] = [
     volume: 30,
   },
   {
-    id: "tearing",
+    id: "tearing-me-apart",
     duration: 4500,
     permission: MEME_PERMISSION.ALL,
     volume: 20,

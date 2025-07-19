@@ -44,6 +44,12 @@ export const MEMES: IMeme[] = [
     volume: 70,
   },
   {
+    id: "chicken-banana",
+    duration: 9000,
+    permission: MEME_PERMISSION.ALL,
+    volume: 90,
+  },
+  {
     id: "controversial",
     duration: 4500,
     permission: MEME_PERMISSION.ALL,
@@ -138,6 +144,12 @@ export const MEMES: IMeme[] = [
     duration: 2500,
     permission: MEME_PERMISSION.ALL,
     volume: 70,
+  },
+  {
+    id: "hare-krishna",
+    duration: 6500,
+    permission: MEME_PERMISSION.ALL,
+    volume: 100,
   },
   {
     id: "hate",
@@ -240,6 +252,12 @@ export const MEMES: IMeme[] = [
     duration: 5500,
     permission: MEME_PERMISSION.ALL,
     volume: 70,
+  },
+  {
+    id: "magic-magic",
+    duration: 6500,
+    permission: MEME_PERMISSION.ALL,
+    volume: 80,
   },
   {
     id: "mama",
